@@ -1,0 +1,30 @@
+﻿Build started 2013/6/17 19:00:04.
+     1>Project "C:\Users\hjshi84\Desktop\Work Space\QT\qttest\qttest\qttest.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\qttest.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.0.1\5.0.1\msvc2010\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.0.1\5.0.1\msvc2010\include\QtCore /IC:\Qt\Qt5.0.1\5.0.1\msvc2010\include\QtGui /IC:\Qt\Qt5.0.1\5.0.1\msvc2010\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt mythread.cpp
+         mythread.cpp
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\hjshi84\Desktop\Work Space\QT\qttest\Win32\Debug\\qttest.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.0.1\5.0.1\msvc2010\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\qttest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\hjshi84\Desktop\Work Space\QT\qttest\Win32\Debug\qttest.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\hjshi84\Desktop\Work Space\QT\qttest\Win32\Debug\qttest.lib" /MACHINE:X86 Debug\moc_mythread.obj
+         Debug\moc_qttest.obj
+         Debug\qrc_qttest.obj
+         Debug\main.obj
+         Debug\Mylabel.obj
+         Debug\mythread.obj
+         Debug\qttest.obj
+         LINK : C:\Users\hjshi84\Desktop\Work Space\QT\qttest\Win32\Debug\\qttest.exe not found or not built by the last incremental link; performing full link
+         qttest.vcxproj -> C:\Users\hjshi84\Desktop\Work Space\QT\qttest\Win32\Debug\qttest.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\hjshi84\Desktop\Work Space\QT\qttest\Win32\Debug\\qttest.exe;#1" /manifest Debug\qttest.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\qttest.unsuccessfulbuild".
+         Touching "Debug\qttest.lastbuildstate".
+     1>Done Building Project "C:\Users\hjshi84\Desktop\Work Space\QT\qttest\qttest\qttest.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.86

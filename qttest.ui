@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>qttestClass</class>
+ <widget class="QMainWindow" name="qttestClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>766</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>qttest</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>761</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane {  /* The tab widget frame */
+         border-top: 2px solid #C2C7CB;
+     }
+QTabWidget::tab-bar {
+		
+         left: 5px;  /* move to the right by 5px */
+     }
+   /* Style the tab using the tab sub-control. Note that
+         it reads QTabBar _not_ QTabWidget */
+ QTabBar::tab {
+	font: 75 12pt &quot;幼圆&quot;;
+         background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                     stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+         border: 2px solid #C4C4C3;
+         border-bottom-color: #C2C7CB;  /* same as the pane color */
+         border-top-left-radius: 4px;
+         border-top-right-radius: 4px;
+         min-width: 25ex;
+		 min-height:5ex;
+         padding: 2px;
+         
+     }
+QTabBar::tab:selected, QTabBar::tab:hover {
+         background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                     stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+     }
+QTabBar::tab:selected {
+         border-color: #9B9B9B;
+         border-bottom-color: #C2C7CB;  /* same as pane color */
+     }
+QTabBar::tab:!selected {
+         margin-top: 2px;  /* make non-selected tabs look smaller */
+     }
+
+
+
+
+
+QPushButton {
+         border: 2px solid #8f8f91;
+         border-radius: 6px;
+         background-color: qlineargradient(x1:0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #f6f7fa, stop: 1 #dadbde);
+         min-width: 80px;
+		 font: 10pt &quot;黑体&quot;;
+     }
+ 
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #dadbde, stop: 1 #f6f7fa);
+     }
+
+QRadioButton{min-height:20;border:1px;font: 75 italic 11pt &quot;Times New Roman&quot;;
+}
+
+QGroupBox {border:2px groove
+gray;border-radius:10px;padding:2px 4px;font: 75 13pt &quot;幼圆&quot;;}
+
+QLabel{font: 75 italic 14pt &quot;幼圆&quot;;}
+
+
+
+
+
+</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>作业一</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>84</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> </string>
+      </property>
+      <property name="text">
+       <string>打开文件</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>0</y>
+        <width>531</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>直方图</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>原图</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>二值化</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>卷积/直方图</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>201</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>算法</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>89</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OTSU</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>89</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Entrupy</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>121</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="value">
+        <number>128</number>
+       </property>
+       <property name="tracking">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>42</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="value">
+        <number>128</number>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>89</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>201</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>卷积操作</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 11pt &quot;幼圆&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Convolution</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>作业二</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>84</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>打开文件</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>201</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>边缘检测</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Roberts Operator</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prewitt Operator</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_6">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sobel Operator</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>201</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>除噪</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton_7">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>151</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gaussian Reduction</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_8">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>70</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Median Filter</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>0</y>
+        <width>531</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>边缘检测</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>原图</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>除噪</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>边缘+除噪</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>作业三&amp;&amp;四</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>0</y>
+        <width>531</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>基本</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>原图</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>高级</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>skel还原</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>84</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>打开文件</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>201</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>基本操作</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton_12">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>erosion</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_13">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>dilation</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_14">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>opening</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_15">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>closing</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>201</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>高级操作</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton_16">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>distance</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_17">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>skeleton</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_18">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>360</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>骨架提取模式</string>
+      </property>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 11pt &quot;幼圆&quot;;</string>
+       </property>
+       <property name="text">
+        <string>快速骨骼线提取</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>作业五</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>84</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>打开文件</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>131</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>灰度操作</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>84</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>边缘提取</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>84</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>梯度</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>131</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>灰度重建</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>84</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>重建</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>设置</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>20</y>
+        <width>141</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>梯度及边缘</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>89</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>标准</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>89</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>外部</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>89</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>内部</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>521</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>模板</string>
+      </property>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>30</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">text.setAlignment(Qt::AlignHCenter);</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>30</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>30</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>60</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>60</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>60</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>90</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>90</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>90</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>二值模板：</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_10">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>140</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_11">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>170</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_12">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>170</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_13">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>170</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_14">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>140</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_15">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>200</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+       <property name="overwriteMode">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_16">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>200</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_17">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>140</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_18">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>200</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>170</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>灰度模板：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>360</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>高斯模板：</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_19">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>360</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_20">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>280</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_21">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>310</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+       <property name="overwriteMode">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_22">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>280</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_23">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>250</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_24">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>280</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>270</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>卷积模板：</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_25">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>310</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_26">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>250</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_27">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>310</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_28">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>250</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_12">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>220</y>
+        <width>141</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Info</string>
+      </property>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>50</y>
+         <width>111</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;施黄骏&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;1120829032&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;B1208293&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>766</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qttest.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>48</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>240</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_pushButton_clicked()</slot>
+ </slots>
+</ui>
